@@ -20,7 +20,11 @@ export default function () {
                 key={link.hash}
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}>
-                  <Link className={clsx('flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition',{"text-gray-950":activeSection===link.name})} href={link.hash}>{link.name} {link.name === activeSection && (<span className='bg-gray-100 rounded-full absolute inset-0 -z-10'></span>) }</Link>
+                  <Link onClick={() => setActiveSection(link.name)} className={clsx('flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition',{"text-gray-950":activeSection===link.name})} href={link.hash}>{link.name} {link.name === activeSection && (<motion.span className='bg-gray-100 rounded-full absolute inset-0 -z-10' layoutId='activeSelection' transition={{
+                    type:"spring",
+                    stiffness:380,
+                    damping:30
+                  }}></motion.span>) }</Link>
                 </motion.li>
               ))
             }
