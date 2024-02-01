@@ -5,7 +5,7 @@ import SubmitBtn from "./submit-btn";
 import {motion} from "framer-motion"
 import { useSectionInView } from "@/lib/hooks";
 import {sendEmail} from '@/actions/sendEmail'
-import { useFormStatus } from "react-dom";
+import toast from "react-hot-toast";
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
   return (
@@ -33,10 +33,10 @@ export default function Contact() {
       <form className="mt-10 flex flex-col" action={async(FormData) => {
         const {data,error} = await sendEmail(FormData);
         if(error){
-          alert(error);
+          toast.error(error)
           return;
         }
-        alert('Email Sent successfully')
+        toast.success('Email Sent successfully')
       }}>
         <input name="senderEmail" className="h-14 rounded-lg px-4 borderBlack" type="email" required maxLength={500} placeholder="Your Email"/>
         <textarea name="message" className="h-52 my-3 rounded-lg borderBlack p-4" required maxLength={5000}  placeholder="Your Message" />
