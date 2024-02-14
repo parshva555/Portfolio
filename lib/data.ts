@@ -5,7 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
-
+import yelpcampImg from '@/public/yelpcamp.png'
 export const links = [
   {
     name: "Home",
@@ -36,27 +36,19 @@ export const links = [
 export const experiencesData = [
   {
     title: "ACM Cloud Computing Co-head",
-    location: "Symviosis Institute of Technology, Pune",
+    location: "Symbiosis Institute of Technology, Pune",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Fostered collaboration with industry experts and professionals in the cloud computing domain to bring real-world insights and perspectives to ACM members.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Feb 2023 - Present",
   },
   {
     title: "Acmegrade Machine Learning Intern",
     location: "Remote Mode",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      " Interned at Acemgrade, gaining practical AI experience in data analysis, machine learning, and neural networks,contributing to real-world AI solutions and honing problem-solving skills.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Feb 2023 - April 2023",
   },
 ] as const;
 
@@ -64,23 +56,30 @@ export const projectsData = [
   {
     title: "SignArity",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "SignArity is an immersive platform for learning sign language that makes use of AR and AI recognition modules. ",
     tags: ["React", "Machine Learning", "SQL", "Bootstrap", "Augmented Reality"],
-    imageUrl: corpcommentImg,
+    imageUrl: wordanalyticsImg,
   },
   {
     title: "QuickPick",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "QuickPick is an Online Retail Management System to facilitate smooth and user-friendly online retail operations.",
     tags: ["React", "Bootstrap", "Nodejs", "SQL"],
-    imageUrl: rmtdevImg,
+    imageUrl: corpcommentImg,
   },
   {
-    title: "Social Media App",
+    title: "Yelp-Camp",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "YelpCamp is essentially a web application that allows users to view, create, and review campgrounds.",
+    tags: ["HTML", "Express", "MongoDB", "CSS", "Passport.js"],
+    imageUrl:yelpcampImg,
+  },
+  {
+    title: "Photo-Pulse",
+    description:
+      " A sleek social media platform enabling seamless photo sharing and having functionalities such as user following, and search for posts for a rich, engaging experience. ",
     tags: ["React", "Express", "MongoDB", "Tailwind", "Redux"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: rmtdevImg,
   },
 ] as const;
 
