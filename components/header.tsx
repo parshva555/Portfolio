@@ -5,7 +5,7 @@ import {links} from "@/lib/data"
 import clsx from 'clsx'
 import Link from 'next/link'
 import { useActiveSectionContext } from '@/context/active-section-context'
-export default function () {
+export default function Header() {
   const {activeSection,setActiveSection,setTimeOfLastClick} = useActiveSectionContext()
   return <header className='z-[999] relative'>
       <motion.div
