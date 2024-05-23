@@ -19,6 +19,10 @@ export default function Projects() {
                 ))
             }
         </div>
+        <div className='mt-10 text-center'>
+        <h2>View my other projects on ➡️  <a href="https://github.com/parshva555"><b><u>Github</u></b></a> </h2>
+        </div>
+
     </section>
   )
 }

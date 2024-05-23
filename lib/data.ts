@@ -103,4 +103,5 @@ export const skillsData = [
   "Java",
   "Bootstrap",
   "Framer Motion",
+  "Docker"
 ] as const;
