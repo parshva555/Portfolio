@@ -36,7 +36,7 @@ export const links = [
 export const experiencesData = [
   {
     title: "ACM Cloud Computing Co-head",
-    location: "Symbiosis Institute of Technology, Pune",
+    location: "- Symbiosis Institute of Technology, Pune",
     description:
       "Fostered collaboration with industry experts and professionals in the cloud computing domain to bring real-world insights and perspectives to ACM members.",
     icon: React.createElement(LuGraduationCap),
@@ -44,11 +44,19 @@ export const experiencesData = [
   },
   {
     title: "Acmegrade Machine Learning Intern",
-    location: "Remote Mode",
+    location: "- Remote Mode",
     description:
       " Interned at Acemgrade, gaining practical AI experience in data analysis, machine learning, and neural networks,contributing to real-world AI solutions and honing problem-solving skills.",
     icon: React.createElement(CgWorkAlt),
     date: "Feb 2023 - April 2023",
+  },
+  {
+    title: "Web Developer Intern at Khushiyaan Foundation",
+    location: "- Hybrid, Thane",
+    description:
+      "Developed an Edtech platform using ReactJs, Express, and MongoDB to deliver essential study materials to rural children, enhancing user experience with responsive design and performance optimizations for seamless access.",
+    icon: React.createElement(CgWorkAlt),
+    date: "July 2023 - December 2023",
   },
 ] as const;
 

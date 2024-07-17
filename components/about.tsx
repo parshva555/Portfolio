@@ -29,8 +29,7 @@ export default function About() {
           React, Next.js, Node.js, and MongoDB
         </span>
         . I am also familiar with TypeScript. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">internship position.</span> 
+        learn new technologies.
       </p>
 
       <p>
