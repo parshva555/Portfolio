@@ -57,7 +57,7 @@ export default function Intro() {
         Passionate about{" "}
         <span className="font-bold">full-stack development. </span>I enjoy
         building <span className="italic">websites & apps</span>. I am currently
-        learning <span className="underline">React Native and Docker</span>.
+        learning <span className="underline">Generative AI</span>.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"

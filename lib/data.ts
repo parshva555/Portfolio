@@ -1,11 +1,13 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
+import {FiX} from "react-icons/fi";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import yelpcampImg from '@/public/yelpcamp.png'
+import {StoneXIcon} from "@/components/stonexicon";
 export const links = [
   {
     name: "Home",
@@ -34,13 +36,29 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+    {
+    title: "Associate Software Engineer",
+    location: "- StoneX Group Inc.",
+    description:
+      "Building intelligent chatbots to streamline team workflows, enabling faster access to information and improving overall productivity.",
+    icon: React.createElement(StoneXIcon),
+    date: "Aug 2025 - Present",
+  },
+  {
+    title: "Production Support Intern",
+    location: "- StoneX Group Inc.",
+    description:
+      "Ensured smooth operation of production systems by monitoring applications, diagnosing issues, and providing real-time fixes to minimize downtime. Collaborated with development and operations teams to enhance system stability and performance.",
+    icon: React.createElement(StoneXIcon),
+    date: "Jan 2025 - July 2025",
+  },
   {
     title: "ACM Cloud Computing Co-head",
     location: "- Symbiosis Institute of Technology, Pune",
     description:
       "Fostered collaboration with industry experts and professionals in the cloud computing domain to bring real-world insights and perspectives to ACM members.",
     icon: React.createElement(LuGraduationCap),
-    date: "Feb 2023 - Present",
+    date: "Feb 2023 - Dec 2024",
   },
   {
     title: "Acmegrade Machine Learning Intern",
@@ -102,14 +120,15 @@ export const skillsData = [
   "Git",
   "Tailwind",
   "C++",
+  "Python",
   "MongoDB",
   "Redux",
-  "php",
   "AWS",
   "Express",
   "SQL",
   "Java",
   "Bootstrap",
   "Framer Motion",
-  "Docker"
+  "Docker",
+  "Azure"
 ] as const;
