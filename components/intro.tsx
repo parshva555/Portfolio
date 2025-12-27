@@ -30,7 +30,7 @@ export default function Intro() {
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl ring-4 ring-white/40 dark:ring-white/10"
             />
           </motion.div>
           <motion.span
@@ -53,11 +53,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Parshva Dani.</span> I'm
+        <span className="font-bold">Hello, I'm <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-teal-500 dark:from-blue-400 dark:to-teal-300">Parshva Dani</span>.</span> I'm
         Passionate about{" "}
         <span className="font-bold">full-stack development. </span>I enjoy
         building <span className="italic">websites & apps</span>. I am currently
-        learning <span className="underline">Generative AI</span>.
+        learning <span className="underline decoration-blue-500/30 decoration-4 underline-offset-4">Generative AI</span>.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
@@ -67,18 +67,18 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition shadow-lg hover:shadow-xl hover:shadow-gray-900/30"
           onClick={() => {
             setActiveSection('Contact')
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here <BsArrowRight />
+          Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
           href="CV.pdf"
           target="_blank"
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 shadow-md hover:shadow-lg"
         >
           {" "}
           Download CV{" "}
@@ -87,7 +87,7 @@ export default function Intro() {
         <a
           href="https://www.linkedin.com/in/parshva-dani-28551b24b/"
           target="_blank"
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 shadow-md hover:shadow-lg"
         >
           {" "}
           <BsLinkedin />
@@ -95,7 +95,7 @@ export default function Intro() {
         <a
           href="https://github.com/parshva555"
           target="_blank"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 shadow-md hover:shadow-lg"
         >
           {" "}
           <FaGithubSquare />

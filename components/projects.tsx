@@ -20,7 +20,9 @@ export default function Projects() {
             }
         </div>
         <div className='mt-10 text-center'>
-        <h2>View my other projects on ➡️  <a href="https://github.com/parshva555"><b><u>Github</u></b></a> </h2>
+            <a href="https://github.com/parshva555" target="_blank" className="inline-flex items-center gap-2 text-gray-700 dark:text-white/70 hover:text-gray-950 dark:hover:text-white transition-colors border-b-2 border-transparent hover:border-gray-950 dark:hover:border-white pb-1">
+                View my other projects on Github <span className="text-xl">→</span>
+            </a>
         </div>
 
     </section>

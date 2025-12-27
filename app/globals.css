@@ -9,4 +9,33 @@
 
 html.dark {
     --line-color: rgba(255, 255, 255, 0.2);
-  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Selection Color */
+::selection {
+  background-color: #a5b4fc; /* indigo-300 */
+  color: #1e1b4b; /* indigo-950 */
+}
+
+.dark ::selection {
+  background-color: #6366f1; /* indigo-500 */
+  color: #ffffff;
+}

@@ -40,6 +40,7 @@ export default function Experience() {
                 background:
                   theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
                 fontSize: "1.5rem",
+                boxShadow: theme === "light" ? "0 0 0 4px #f3f4f6" : "0 0 0 4px rgba(255, 255, 255, 0.05)",
               }}
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>

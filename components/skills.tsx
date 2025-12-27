@@ -34,7 +34,7 @@ export default function Skills() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="border border-black/[0.1] rounded-xl px-5 py-3 bg-blue-50 hover:bg-gray-400 hover:text-white dark:bg-white/10 dark:text-white/80"
+            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 hover:scale-105 transition-all cursor-default shadow-sm hover:shadow-md hover:bg-gray-50 dark:hover:bg-white/20"
             key={index}
             custom={index}
           >
